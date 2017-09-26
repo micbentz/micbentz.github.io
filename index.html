@@ -1,138 +1,137 @@
-†<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Michael Bentz</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./bower_components/jquery-3.2.1.min/index.js"></script>
+    <script type="text/javascript" src="./bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./bower_components/animate.css/animate.css">
+    <link rel="stylesheet" href="./bower_components/jquery-ui/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row right">
-          <img class="center circle responsive-img" src="face.png">
-        </div>
-      </div>
+<html>
+    <body>
+    <div class="overlay-container">
+        <section class="overlay">            
+            <div class="overlay-content">
+                <ul class="form-style-1">
+                    <div class="overlay-info">
+                        <h1>Request Form</h1>
+                        <i id="close" class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <li>
+                        <label>Organization <span class="required">*</span></label>
+                        <input type="text" name="org" class="field-long" placeholder="Club XYZ" /></li>
+                    <li>
+                        <label>Requesting</label>
+                        <select name="request" class="field-select">
+                        <option value="teaching">Teach</option>
+                        <option value="terforming">Perform</option>
+                        <option value="general">General</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>Date</label>
+                        <input type="text" name="date" id="datepicker">
+                    </li>
+                    <li>
+                        <label>Your Message <span class="required">*</span></label>
+                        <textarea
+                            placeholder="Can you teach us the dancing?" 
+                            name="message" 
+                            class="field-long field-textarea"></textarea>
+                    </li>
+                    <li>
+                        <input id="submit" type="submit" value="Submit" />
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
-    <div class="parallax"><img src="al.jpg" alt="Unsplashed background img 1"></div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center red-text text-lighten-2"><i class="material-icons">question_answer</i></h2>
-            <h5 class="center">About Me</h5>
-            <p class="light">I study computer science at the University of Florida and will graduate May 2017. I am passionate about coding and the challenges it presents.</p>
-          </div>
+    <header>
+        <div class="responsive-container">
+            <div class="header-content">
+                <h1>Gator Salsa Club</h1>
+                <div class="media-links">
+                    <a href="https://www.facebook.com/groups/gatorsalsaclub/" class="fa fa-facebook-square" aria-hidden="true"></a>
+                    <a href="https://www.instagram.com/gatorsalsa/" class="fa fa-instagram" aria-hidden="true"></a>
+                    <a href="https://www.youtube.com/user/GatorSalsaClub" class="fa fa-youtube-square"></a>
+                </div>
+            </div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center red-text text-lighten-2"><i class="material-icons">code</i></h2>
-            <h5 class="center">Coding Interests</h5>
-
-            <p class="light">I am a Java/Android guy. My most recent project is an Android arcade game!</p>
-          </div>
+    </header>
+    <main class="main">
+        <div class="open-request">
+            <p>Request</p>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center red-text text-lighten-2"><i class="material-icons">free_breakfast</i></h2>
-            <h5 class="center">The Everyday</h5>
-
-            <p class="light">Coding doesn't stop outside the classroom, I actually prefer it. It offers a degree of freedom to work on projects that I personally enjoy. Early mornings and good coffee keep me going.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <!-- <h5 class="header col s12 light">Marston Science Library (aka 2nd home)</h5> -->
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="msl.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Me</h4>
-          <p class="center-align light">
-            Phone: (754) 202-3934
-            <br/>
-            Email : mbentz@ufl.edu
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <footer class="page-footer blue text-darken-2">
-    <div class="container">
-      <div class="row">
-		<div class="col s12 m4">
-			<div class="center icon-block">
-	          <h5 class="center white-text">What I've Worked On</h5>
-	          <ul>
-	            <li><a class="white-text" href="https://github.com/micbentz">Github</a></li>
-	            <!-- <li><a class="white-text" href="https://www.linkedin.com/in/michael-bentz-449370106">LinkedIn</a></li>
-	            <li><a class="white-text" href="https://www.facebook.com/mike.bentz.9?ref=bookmarks">Facebook</a></li> -->
-	          </ul>
-	  		</div>
-        </div>
-		<div class="col s12 m4">
-			<div class="center icon-block">
-	          <h5 class="center white-text">Android</h5>
-	          <ul>
-	            <li><a class="white-text" href="https://play.google.com/store/apps/details?id=com.game.bentz.ShapeShift">Shape Shift</a></li>
-	          </ul>
-	  		</div>
-        </div>
-		<div class="col s12 m4">
-			<div class="center icon-block">
-	          <h5 class="center white-text">Other</h5>
-	          <ul>
-	            <li><a class= "white-text" href="https://drive.google.com/open?id=0BxGXcCrFmqxYbGxHcTFVMGdsbGc">Résumé</a>
-	            </li>
-	          </ul>
-	  		</div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        <p>&copy; 2015-2017 Michael Bentz  </p>
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
+        <!-- <img class="main_img" src ="photos/GSC_extrav.jpg" alt="GSC Extravaganza attendees"> -->
+        <section class="par_map_flex">
+            <span class="article_margins">
+                <article>
+                    <h3>Who We Are</h3>
+                    <p>Paragraph space, how 'bou dat</p>
+                </article>
+                <article>
+                    <h3>Our Instructors</h3>
+                    <p>Blabitty blah, Propuesta Indecente</p>
+                </article>
+            </span>
+            <div class="map_margins">
+                <h3>Location</h3>
+                <img class="map_img" src="photos/USAmap.jpeg" alt="Map of the USA">
+            </div>
+        </section>
+        <section class="text_format">
+            <h2>Head Instructors</h2>
+            <div class="flex_container">
+                <figure>
+                    <img class="instructor_imgs" src="photos/2002 Mustang Sand.jpg" alt="mustang pic">
+                    <figcaption>Instructor Name</figcaption>
+                </figure>
+                <figure>
+                    <img class="instructor_imgs" src="photos/2002 Mustang Sand.jpg" alt="mustang pic">
+                    <figcaption>Instructor Name</figcaption>
+                </figure>
+                <figure>
+                    <img class="instructor_imgs" src="photos/2002 Mustang Sand.jpg" alt="mustang pic">
+                    <figcaption>Instructor Name</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>  
+    <footer>
+        <section class="footer-container">
+            <div class="footer-content">
+                <ul>
+                    <h1>Other</h1>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <h1>Events</h1>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <h1>Contact Us</h1>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>
+                    <i class="fa fa-headphones" aria-hidden="true"></i>
+                    Sean Riordan & Michael Bentz. All Rights Reserved 2017. [R&B] 
+                    <i class="fa fa-headphones" aria-hidden="true"></i>
+                </p>
+            </div>
+        </section>
+    </footer>
+    </body>
 </html>
