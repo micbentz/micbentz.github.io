@@ -2,7 +2,7 @@ console.log('hello world');
 
 const UF_BLUE = '#00529b'
 const UF_ORANGE = '#f37021';
-const UF_BLUE_RANGE = ['#f0f8ff', '#8ac8ff', '#007ff0', '#00529b', '#002546', '#001324','#000a13'];
+const UF_BLUE_RANGE = ['#f0f8ff', '#8ac8ff', '#007ff0', '#00529b', '#002546', '#001324'];
 const MODAL_BACKGROUND = '#808080';
 const GSC_EMAIL = 'gatorsalsaclub@gmail.com';
 
@@ -11,8 +11,9 @@ $(document).ready(function () {
     /**
      * CHECK FOR WIDTH TO RESIZE HEADER
      */
-    resizeHeader();    
-    $('#datepicker').datepicker();
+    resizeHeader();
+    
+
     /**
      * RESPONSIVE CONTAINER FOR HEADER
      */
@@ -32,10 +33,10 @@ $(document).ready(function () {
      */
 
     // load in the overlay so that it can be shown later
-    // $('.overlay-container').load('./request_overlay/request_overlay.html', function() {
-    //     // Create the datepicker
-    //     $('#datepicker').datepicker();
-    // });
+    $('.overlay-container').load('./request_overlay/request_overlay.html', function() {
+        // Create the datepicker
+        $('#datepicker').datepicker();
+    });
 
     // trigger the overlay
     $('.open-request').click(function() {
@@ -138,10 +139,5 @@ $(document).ready(function () {
             $('header').height(newHeight);
             // console.log('setting header height to: ' + newHeight);
         }
-        // Position the Request FAB below the HEADER
-        $('.open-request').css({
-            'top': `${$('header').height() + 15}px`,
-            'display': 'block' 
-        });
     }
 });
