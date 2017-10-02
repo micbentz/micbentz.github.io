@@ -1,1 +1,1 @@
-# GSC_SITE
+Updated portfolio: https://micbentz.github.io/portfolio/
